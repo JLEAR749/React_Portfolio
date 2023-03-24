@@ -5,7 +5,7 @@ const About = () => {
   return (
   <div>
     <p className="content">Full Stack Developer</p>
-    <img className="my-pic" src={process.env.PUBLIC_URL +'/img/profile.jpg'} alt="Johannah Lear"/>
+    <img className="my-pic" src='/img/profile.jpg' alt="Johannah Lear"/>
     <p className="about">
       Hello! I am Johannah Lear.  A current full stack student attending the University of Minnesota.
     </p>
