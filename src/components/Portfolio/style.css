@@ -1,0 +1,16 @@
+.navigation {
+
+}
+
+.navigation--list {
+display: flex;
+
+}
+
+.navigation--list-item {
+list-style: none;
+padding-right: 15px;
+font-family: serif;
+font-weight: bold;
+
+}
