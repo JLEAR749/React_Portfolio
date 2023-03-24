@@ -2,7 +2,8 @@ import { useState } from 'react';
 import Header from './components/Header';
 import About from './components/About';
 // import Contact from './components/Contact';
-import Project from './components/Project';
+// import Project from './components/Project';
+// import Portfolio from './components/Portfolio';
 import React from 'react';
 import './App.css';
 
@@ -13,11 +14,12 @@ function App() {
       case 'About Me':
         return <About/>
 
+
       // case 'Contact':
       //   return <Contact/>
 
-      case 'Project':
-        return <Project />
+      // case 'Project':
+      //   return <Project />
 
       default:
         return <About />
