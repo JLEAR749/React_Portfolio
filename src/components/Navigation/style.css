@@ -10,4 +10,5 @@ display: flex;
 .navigation--list-item {
 list-style: none;
 padding-right: 15px;
+float: right;
 }
