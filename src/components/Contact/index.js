@@ -1,62 +1,62 @@
 import React from "react";
-import "./style.css";
+
+function Contact() {
+  const [formState, setFormState]=useState({name:'', email:'',message:''});
+  const [errorMessage,setErrorMessage] = useState('');
+  const {name, email, message} = formState;
+
+}
 import { useState } from "react";
 import ReactDOM from "react-dom/client";
 import Navigation from "../Navigation";
 
-function MyForm() {
-  const [inputs, setInputs] = useState({});
-
-  const handleChange = (event) => {
-    const name = event.target.name;
-    const value = event.target.value;
-    setInputs(values => ({...values, [name]: value}))
-  }
-
   const handleSubmit = (event) => {
-    event.preventDefault();
-    console.log(inputs);
-  }
+    if (event.target.name === 'email'){
+      if (!isValid){
+        setErrorMessage('Your email is invalid');
+      }else{
+        setErrorMessage('';)
+      }
+    }
+    if (!errorMessage){
+      setFormState({...formState,[event.target.name]:event.target.value});
+      console.log('Handle Form', formState);
+    }
+  };
 
   return (
+    <section>
+      <h1 data>Contact Me</h1>
     <form onSubmit={handleSubmit}>
-      <label>Enter your name:
+      <label>Name:
       <input 
         type="text" 
-        name="text" 
-        value={input} 
+        name="name" 
+        value={name} 
         onChange={handleChange}
       />
       </label>
-      <label>Enter your email:
+      <label>Email address:
         <input 
-          type="string" 
-          name="text" 
-          value={input} 
+          type="email" 
+          name="email" 
+          value={email} 
           onChange={handleChange}
         />
         </label>
-        <label>Type your message:
-        <input 
-          type="string" 
-          name="text" 
-          value={input} 
+        <label>Message:
+        <textarea 
+          name="message" 
+          value={message} 
           onChange={handleChange}
         />
         </label>
         <button className="bucket-button">Submit</button>
-        <input type="submit" />
         <Navigation />
     </form>
-  )
+  </section>
+  );
 }
 
-const root = ReactDOM.createRoot(document.getElementById('root'));
-root.render(<MyForm />);
-
-const Contact = () => {
-  return 
-  
-};
 
 export default Contact;
