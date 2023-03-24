@@ -1,11 +1,14 @@
-.header  {
+/* .header  {
     display:flex;
-    justify-content: space-between;
-    align-items: center;
 }
 
 .header--title{
     padding-left: 30px;
-    font-size: 55px;
-    font-family: Geneva;
-}
+    font-size: 25px;
+    font-family:serif;
+    align-items: center;
+    text-size-adjust: 24px;
+    padding: 50px;
+    list-style: none;
+    padding-right: 15px;
+} */
