@@ -1,0 +1,10 @@
+.header  {
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.header--title{
+    padding-left: 30px;
+    font-size: xx-large;
+}

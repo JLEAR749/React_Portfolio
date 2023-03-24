@@ -4,8 +4,8 @@ import "./style.css";
 
 const Header = () => {
   return (
-    <div>
-      <span>Johannah Lear</span>
+    <div className="header">
+      <span className="header--title">Johannah Lear</span>
       <Navigation />
     </div>
   );
