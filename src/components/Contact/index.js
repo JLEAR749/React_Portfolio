@@ -46,6 +46,7 @@ function MyForm() {
         </label>
         <button className="bucket-button">Submit</button>
         <input type="submit" />
+        <Navigation />
     </form>
   )
 }
