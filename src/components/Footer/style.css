@@ -1,4 +1,14 @@
 .content{
     background-color: bisque;
     color: black;
+    padding-right: 30px;
+    font-size: 25px;
+    font-family:serif;
+    align-items: center;
+    text-size-adjust: 24px;
+    padding: 50px;
+    list-style: none;
+    padding-right: 15px;
+    color: white;
+    background-color: black;
 }
