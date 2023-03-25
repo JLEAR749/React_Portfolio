@@ -1,17 +1,19 @@
 import React from "react";
+import Navigation from "../Navigation";
+import "./style.css";
 
 const Footer = () => {
+
   return (
-    <footer className="footer">
       <div className="content">
         <p>
-          <bolder>My Full Stack Development Portfolio</bolder>
-          <a
-            href="https://github.com/JLEAR749">Johannah Lear</a>
+          <h2>My Full Stack Development Portfolio</h2>
+          <a href="https://github.com/JLEAR749">Johannah Lear</a>
           <a href="https://www.linkedin.com/in/johannahlear/" >LinkedIn</a>
         </p>
+        <Navigation/>
       </div>
-    </footer>
+    
   );
 };
 
