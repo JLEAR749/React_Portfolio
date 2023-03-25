@@ -5,7 +5,7 @@ import "./style.css";
 const Footer = () => {
 
   return (
-      <div className="content">
+      <div className="content-footer">
         <p>
           <h2>My Full Stack Development Portfolio</h2>
           <a href="https://github.com/JLEAR749">Johannah Lear</a>

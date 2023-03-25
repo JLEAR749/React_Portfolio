@@ -4,6 +4,7 @@ import About from './components/About';
 import Contact from './components/Contact';
 import Project from './components/Project';
 import Portfolio from './components/Portfolio';
+import Footer from './components/Footer';
 import React from 'react';
 import './App.css';
 
