@@ -18,18 +18,17 @@ function Contact() {
         const inputType = target.name;
         const inputValue = target.value;
     }
-    
+
         // Based on the input type, we set the state of either email
         if (inputType === 'email') {
           setEmail(inputValue);
-      };
+      }};
     
       const handleFormSubmit = (event) => {
         // Preventing the default behavior of the form submit (which is to refresh the page)
         event.preventDefault();
       };
 
-    
         // First we check to see if the email is not valid or if the userName is empty. If so we set an error message to be displayed on the page.
         if (!validateEmail(email) || !userName) {
           setErrorMessage('Email or username is invalid');
