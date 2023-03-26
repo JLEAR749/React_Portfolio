@@ -10,17 +10,17 @@ import React from 'react';
 import './App.css';
 
 export default function App() {
-  const [currentPage, setCurrentPage] = useState('About');
+  const [defaultPage, setCurrentPage] = useState('About');
 
   // This method is checking to see what the value of `currentPage` is. Depending on the value of currentPage, we return the corresponding component to render.
   const renderPage = () => {
-    if (currentPage === 'About') {
+    if (defaultPage === 'About') {
       return <About />;
     }
-    if (currentPage === 'Portfolio') {
+    if (defaultPage === 'Portfolio') {
       return <Portfolio />;
     }
-    // if (currentPage === 'Resume') {
+    // if (defaultPage === 'Resume') {
     //   return <Resume />;
     // }
     return <Contact />;

@@ -3,15 +3,15 @@ import About from "../About";
 import Portfolio from "../Portfolio";
 import Contact from "../Contact";
 
-export default function Navigation(currentPage,handlePageChange) {
-  const [currentPage, setCurrentPage] = useState('Home');
+export default function Navigation(defaultPage,handlePageChange) {
+  const [defaultPage, setCurrentPage] = useState('Home');
   
       return<ul className="naviagtion">
       <li className="naviagtion-item">
         <a
           href="#home"
           onClick={() => handlePageChange('Home')}
-          className={currentPage === 'Home' ? 'naviagtion-link active' : 'naviagtion-link'}
+          className={defaultPage === 'Home' ? 'naviagtion-link active' : 'naviagtion-link'}
         >
           Home
         </a>
@@ -20,7 +20,7 @@ export default function Navigation(currentPage,handlePageChange) {
         <a
           href="#about"
           onClick={() => handlePageChange('About')}
-         className={currentPage === 'About' ? 'naviagtion-link active' : 'naviagtion-link'}
+         className={defaultPage === 'About' ? 'naviagtion-link active' : 'naviagtion-link'}
         >
           About
         </a>
@@ -29,7 +29,7 @@ export default function Navigation(currentPage,handlePageChange) {
         <a
           href="#project"
           onClick={() => handlePageChange('Project')}
-          className={currentPage === 'Project' ? 'naviagtion-link active' : 'naviagtion-link'}
+          className={defaultPage === 'Project' ? 'naviagtion-link active' : 'naviagtion-link'}
         >
           Project
         </a>
@@ -38,7 +38,7 @@ export default function Navigation(currentPage,handlePageChange) {
         <a
           href="#contact"
           onClick={() => handlePageChange('Contact')}
-          className={currentPage === 'Contact' ? 'naviagtion-link active' : 'naviagtion-link'}
+          className={defaultPage === 'Contact' ? 'naviagtion-link active' : 'naviagtion-link'}
         >
           Contact
         </a>
