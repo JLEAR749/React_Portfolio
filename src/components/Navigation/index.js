@@ -2,8 +2,7 @@ import React from "react";
 
 const Navigation = () => {
   
-
-      return<ul className="nav naviagtion">
+      return<ul className="naviagtion">
       <li className="naviagtion-item">
         <a
           href="#home"
