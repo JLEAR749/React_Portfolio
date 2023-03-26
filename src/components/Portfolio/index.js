@@ -2,7 +2,7 @@ import React from "react";
 import Project from "Project";
 
 const Portfolio = () => {
-return 
+return (
 
    const Project = [
     {
@@ -63,11 +63,12 @@ return
       repo:'',
       live:''
     }
-     
+
   ]
 
+}
+
   function Portfolio() {
-    return <List Project={Project} />
-  }
+    return <List Project={Project} />}
   
   export default Portfolio;
