@@ -2,9 +2,6 @@ import React from "react";
 // import Portfolio from "Portfolio";
 
 export default function Project(props) {
-//   const Project = {
-//     width: '18rem',
-//   };
 
   return (
     <div className="container">

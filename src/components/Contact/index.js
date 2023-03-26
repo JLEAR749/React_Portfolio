@@ -7,8 +7,8 @@ function Contact() {
     // Create state variables for the fields in the form
     // We are also setting their initial values to an empty string
     const [email, setEmail] = useState('');
-    const [userName, setUserName] = useState('');
-    const [password, setPassword] = useState('');
+    const [Name, setName] = useState('');
+    cont [Message, setMessage] = useState('');
     const [errorMessage, setErrorMessage] = useState('');
     
 
@@ -30,10 +30,22 @@ function Contact() {
       };
 
         // First we check to see if the email is not valid so we set an error message to be displayed on the page.
-        if (!validateEmail(email) {
-          setErrorMessage('Email or username is invalid')}
+        if (!validateEmail(email) || !Name) { 
+          setErrorMessage('Email or username is invalid')
         return;
-              <div>
+        }
+        // if (!checkName(Name)){
+        //   setErrorMessage(
+        //     `Type Name in name input`: ${Name}`
+        //   );
+        //   return;
+        // }
+        // alert(`Hello ${Name}`);
+
+        // setName('');
+        // setEmail('');
+        return (
+          <div>
           <form className="form">
             <input
               value={"email"}
@@ -43,11 +55,11 @@ function Contact() {
               placeholder="email"
             />
             <input
-              value={"name"}
-              name="name"
+              value={"Name"}
+              name="Name"
               onChange={handleInputChange}
               type="text"
-              placeholder="name"
+              placeholder="Name"
             />
             <input
               value={"message"}
@@ -64,7 +76,7 @@ function Contact() {
             </div>
           )}
         </div>
-      )
-    }
+      );
+    
 
 export default Contact;

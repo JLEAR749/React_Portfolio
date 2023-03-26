@@ -3,7 +3,7 @@ import About from "../About";
 import Portfolio from "../Portfolio";
 import Contact from "../Contact";
 
-export default function Navigation({About, Contact, Portfolio,handlePageChange}) {
+export default function Navigation(currentPage,handlePageChange) {
   const [currentPage, setCurrentPage] = useState('Home');
   
       return<ul className="naviagtion">
