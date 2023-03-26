@@ -30,6 +30,7 @@ function App() {
     <div className="App">
       <Header />
       {renderPage()}
+      <Footer/>
     </div>
   )
 

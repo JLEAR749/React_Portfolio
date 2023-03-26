@@ -1,14 +1,15 @@
-.content{
-    background-color: bisque;
-    color: black;
-    padding-right: 30px;
-    font-size: 25px;
-    font-family:serif;
-    align-items: center;
+.content-footer{
+    height: 60px;
+    width: 100%;
+    background-color: white;
+    color:black;
     text-size-adjust: 24px;
-    padding: 50px;
-    list-style: none;
-    padding-right: 15px;
-    color: white;
-    background-color: black;
+    margin-top: auto;
+    position: fixed;
+    bottom: 0;
 }
+
+.content-footer-title{
+    
+}
+
