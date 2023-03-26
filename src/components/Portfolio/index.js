@@ -2,10 +2,7 @@ import React from "react";
 import Project from "Project";
 
 const Portfolio = () => {
-return (
-  <div>
-    <p className="content">Portfolio</p>
-    <Project projects={projects}/>
+return 
 
    const Project = [
     {
@@ -64,10 +61,13 @@ return (
       image:'https://github.com/JLEAR749/Social_Network_API',
       description:'',
       repo:'',
-      live:'',
+      live:''
+    }
      
-  ],
-);
-}
+  ]
 
-export default Portfolio;
+  function Portfolio() {
+    return <List Project={Project} />
+  }
+  
+  export default Portfolio;
