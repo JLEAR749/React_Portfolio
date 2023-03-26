@@ -1,8 +1,7 @@
 import React from "react";
-import Project from "Project";
+// import Project from "Project";
 
 const Portfolio = () => {
-return (
 
    const Project = [
     {
@@ -65,10 +64,10 @@ return (
     }
 
   ]
-
+return(<></>)
 }
 
-  function Portfolio() {
-    return <List Project={Project} />}
+  // function Portfolio() {
+  //   return <List Project={Project} />}
   
   export default Portfolio;

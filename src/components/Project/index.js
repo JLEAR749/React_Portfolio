@@ -1,14 +1,14 @@
 import React from "react";
-import Portfolio from "Portfolio";
+// import Portfolio from "Portfolio";
 
 export default function Project(props) {
-  const Project = {
-    width: '18rem',
-  };
+//   const Project = {
+//     width: '18rem',
+//   };
 
   return (
     <div className="container">
-      <div className="project" style={projectStyle}>
+      <div className="project" style={props.projectStyle}>
         <img
           className="project-img-top"
         />
@@ -27,5 +27,3 @@ export default function Project(props) {
     </div>
   );
 }
-
-export default Portfolio;
