@@ -22,7 +22,6 @@ function Contact() {
         // Based on the input type, we set the state of either email
         if (inputType === 'email') {
           setEmail(inputValue);
-      }};
     
       const handleFormSubmit = (event) => {
         // Preventing the default behavior of the form submit (which is to refresh the page)
@@ -78,5 +77,5 @@ function Contact() {
         </div>
       );
     
-
+    }};
 export default Contact;
