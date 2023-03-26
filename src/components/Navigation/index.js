@@ -1,6 +1,10 @@
 import React from "react";
+import About from "../About";
+import Portfolio from "../Portfolio";
+import Contact from "../Contact";
 
-const Navigation = () => {
+export default function Navigation({About, Contact, Portfolio,handlePageChange}) {
+  const [currentPage, setCurrentPage] = useState('Home');
   
       return<ul className="naviagtion">
       <li className="naviagtion-item">
@@ -40,5 +44,3 @@ const Navigation = () => {
         </a>
       </li>
     </ul>}
-
-  export default Navigation;
