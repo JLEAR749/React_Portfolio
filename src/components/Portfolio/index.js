@@ -1,5 +1,15 @@
-import React from "react";
+import React, { useState } from "react";
+import "./style.css";
 
+const [projects]= useState([
+  {
+    title: 'surf-report',
+    description: 'MERN Stack',
+    link: "https://github.com",
+    repo: "https://github.com"
+  },
+
+])
 const Portfolio = () => {
 
    const Portfolio = [
@@ -64,7 +74,7 @@ return(
         <p className="py-6">Previous Projects</p>
       </div>
       <div className="grid sm:grid-cols-2 md:grid-cols-3 gap-8 px-12 sm:px-0">
-          Portfolio.map(({ id, title, languages, repo, live }) => {
+          Portfolio.map({ id, title, languages, repo, live }) => {
         <div key={id} className="shadow-md shadow-gray-600 rounded-lg">
         <img
         src={src}
@@ -80,7 +90,7 @@ return(
           </button>
         </div>
       </div>
-    </div
+  } </div>
   </div>
   </div>
 );
