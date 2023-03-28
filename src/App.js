@@ -10,7 +10,7 @@ import React from 'react';
 import './App.css';
 
 export default function App() {
-  const [defaultPage, setCurrentPage] = useState('About');
+  const [defaultPage, setDefaultPage] = useState('About');
 
   // This method is checking to see what the value of `currentPage` is. Depending on the value of currentPage, we return the corresponding component to render.
   const renderPage = () => {
@@ -20,18 +20,21 @@ export default function App() {
     if (defaultPage === 'Portfolio') {
       return <Portfolio />;
     }
+    if (defaultPage === 'Contact') {
+      return <Contact />;
+    }
     // if (defaultPage === 'Resume') {
     //   return <Resume />;
     // }
-    return <Contact />;
+    return <About />;
   };
 
-  const handlePageChange = (page) => setCurrentPage(page);
+  const handlePageChange = (page) => setDefaultPage(page);
 
   return (
     <div>
       {/* We are passing the currentPage from state and the function to update it */}
-      <Navigation currentPage={currentPage} handlePageChange={handlePageChange} />
+      <Navigation defaultPage={defaultPage} handlePageChange={handlePageChange} />
       {/* Here we are calling the renderPage method which will return a component  */}
       {renderPage()}
     </div>

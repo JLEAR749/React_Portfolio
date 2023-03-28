@@ -1,21 +1,13 @@
-import React from "react";
+import React,{useState} from "react";
+import './style.css';
+
 import About from "../About";
 import Portfolio from "../Portfolio";
 import Contact from "../Contact";
 
-export default function Navigation(defaultPage,handlePageChange) {
-  const [defaultPage, setCurrentPage] = useState('Home');
+export default function Navigation({defaultPage, handlePageChange}) {
   
-      return<ul className="naviagtion">
-      <li className="naviagtion-item">
-        <a
-          href="#home"
-          onClick={() => handlePageChange('Home')}
-          className={defaultPage === 'Home' ? 'naviagtion-link active' : 'naviagtion-link'}
-        >
-          Home
-        </a>
-      </li>
+      return(<ul className="naviagtion">
       <li className="naviagtion-item">
         <a
           href="#about"
@@ -43,4 +35,5 @@ export default function Navigation(defaultPage,handlePageChange) {
           Contact
         </a>
       </li>
-    </ul>}
+    </ul>)}
+
