@@ -2,7 +2,7 @@ import React from "react";
 
 const Portfolio = () => {
 
-   const portfolio = [
+   const Portfolio = [
     {
       id: 0,
       title:'Note-Taker',
@@ -64,7 +64,7 @@ return(
         <p className="py-6">Previous Projects</p>
       </div>
       <div className="grid sm:grid-cols-2 md:grid-cols-3 gap-8 px-12 sm:px-0">
-        { Portfolio.map(({ id, title, languages, repo, live }) => (
+          Portfolio.map(({ id, title, languages, repo, live }) => {
         <div key={id} className="shadow-md shadow-gray-600 rounded-lg">
         <img
         src={src}
@@ -79,13 +79,11 @@ return(
               GitHub
           </button>
         </div>
-      </div>)
-      ))}
-    </div>
+      </div>
+    </div
   </div>
   </div>
 );
 };
-
   
   export default Portfolio;
