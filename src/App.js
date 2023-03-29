@@ -37,6 +37,7 @@ export default function App() {
       <Navigation defaultPage={defaultPage} handlePageChange={handlePageChange} />
       {/* Here we are calling the renderPage method which will return a component  */}
       {renderPage()}
+      <Footer></Footer>
     </div>
   );
 }
