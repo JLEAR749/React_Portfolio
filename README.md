@@ -1,5 +1,12 @@
 # React Portfolio
 
+Preview:
+
+![image](https://user-images.githubusercontent.com/112676566/229013734-7a8b25f7-42d5-4486-8ff0-bf8e14f44e10.png)
+![image](https://user-images.githubusercontent.com/112676566/229013826-fb23baec-7d74-45bc-be5d-63ef4207f6db.png)
+![image](https://user-images.githubusercontent.com/112676566/229013888-eb52bde4-7cc2-47ef-aa1b-4fc8129aecc0.png)
+
+
 [![License:MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://github.com/siennameow/social-network-API/blob/main/LICENSE)
 
 ## User Story
